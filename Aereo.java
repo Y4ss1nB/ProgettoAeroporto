@@ -14,4 +14,7 @@ public class Aereo {
     int numPersoneDaCaricare;
     int numPersoneMassime;
     int numPersoneEffetiveSuAereo;
+
+    double maxLitriSerbatoioBenzina;
+    double livelloBenzina;
 }
