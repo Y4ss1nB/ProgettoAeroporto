@@ -18,6 +18,8 @@ public class Aereo {
     private double maxLitriSerbatoioBenzina;
     private double livelloBenzina;
 
+
+    //costruttore
     public Aereo(String ID, boolean isSoloAndata, int codiceVolo, String impresaCostruttrice, boolean deveAtterrare, int kgMax, int kgDaCaricare, int numPersoneDaCaricare, int numPersoneMassime, double maxLitriSerbatoioBenzina){
         this.ID = ID;
         this.isSoloAndata = isSoloAndata;
@@ -35,5 +37,46 @@ public class Aereo {
 
         this.maxLitriSerbatoioBenzina = maxLitriSerbatoioBenzina;
         this.livelloBenzina = 0;
+    }
+
+    //getter
+    public String getID() {
+        return this.ID;
+    }
+    public int getCodiceVolo() {
+        return this.codiceVolo;
+    }
+    public boolean getIsSoloAndata(){
+        return this.isSoloAndata;
+    }
+    public String getImpresaCostruttrice() {
+        return this.impresaCostruttrice;
+    }
+    public boolean getDeveAtterrae(){
+        return this.deveAtterrare;
+    }
+    public int getKgMax() {
+        return this.kgMax;
+    }
+    public int getKgDaCaricare() {
+        return this.kgDaCaricare;
+    }
+    public int getKgEffetiviSuAereo() {
+        return this.kgEffetiviSuAereo;
+    }
+    public int getNumPersoneDaCaricare() {
+        return this.numPersoneDaCaricare;
+    }
+    public int getNumPersoneMassime() {
+        return this.numPersoneMassime;
+    }
+    public int getNumPersoneEffetiveSuAereo() {
+        return this.numPersoneEffetiveSuAereo;
+    }
+    public double getMaxLitriSerbatoioBenzina() {
+        return this.maxLitriSerbatoioBenzina;
+    }
+    public double getLivelloBenzina() {
+        return this.livelloBenzina;
     }
 }
