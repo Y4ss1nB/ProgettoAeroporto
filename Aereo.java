@@ -20,12 +20,12 @@ public class Aereo {
 
 
     //costruttore
-    public Aereo(String ID, boolean isSoloAndata, int codiceVolo, String impresaCostruttrice, boolean deveAtterrare, int kgMax, int kgDaCaricare, int numPersoneDaCaricare, int numPersoneMassime, double maxLitriSerbatoioBenzina){
+    public Aereo(String ID, boolean isSoloAndata, int codiceVolo, String impresaCostruttrice, int kgMax, int kgDaCaricare, int numPersoneDaCaricare, int numPersoneMassime, double maxLitriSerbatoioBenzina){
         this.ID = ID;
         this.isSoloAndata = isSoloAndata;
         this.codiceVolo = codiceVolo;
         this.impresaCostruttrice = impresaCostruttrice;
-        this.deveAtterrare = deveAtterrare;
+        this.deveAtterrare = false;
 
         this.kgMax = kgMax;
         this.kgDaCaricare = kgDaCaricare;
@@ -79,4 +79,20 @@ public class Aereo {
     public double getLivelloBenzina() {
         return this.livelloBenzina;
     }
+
+    //setter
+    public void setKgEffetiviSuAereo(int kgEffetiviSuAereo) {
+        this.kgEffetiviSuAereo = kgEffetiviSuAereo;
+    }
+    public void setNumPersoneDaCaricare(int numPersoneDaCaricare) {
+        this.numPersoneDaCaricare = numPersoneDaCaricare;
+    }
+    public void setLivelloBenzina(double livelloBenzina) {
+        this.livelloBenzina = livelloBenzina;
+    }
+    public void setDeveAtterrare(boolean deveAtterrare) {
+        this.deveAtterrare = deveAtterrare;
+    }
+
+
 }
