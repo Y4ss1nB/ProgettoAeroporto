@@ -20,4 +20,9 @@ public class Semaforo {
         }
         this.valore--;
     }
+
+    synchronized public void v(){
+        this.valore++;
+        notify();
+    }
 }
