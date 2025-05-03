@@ -11,4 +11,7 @@ public class Aereo {
     int kgDaCaricare;
     int kgEffetiviSuAereo;
 
+    int numPersoneDaCaricare;
+    int numPersoneMassime;
+    int numPersoneEffetiveSuAereo;
 }
