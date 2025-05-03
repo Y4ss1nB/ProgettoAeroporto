@@ -7,4 +7,8 @@ public class Semaforo {
     public Semaforo(int v){ 
         this.valore = v; 
     }
+
+    synchronized public int getValore() {
+        return valore;
+    }
 }
