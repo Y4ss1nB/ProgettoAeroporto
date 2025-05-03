@@ -7,4 +7,8 @@ public class Aereo {
     String impresaCostruttrice;
     boolean deveAtterrare;
 
+    int kgMax;
+    int kgDaCaricare;
+    int kgEffetiviSuAereo;
+
 }
