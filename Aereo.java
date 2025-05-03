@@ -1,4 +1,4 @@
-public class Aereo {
+public class Aereo extends Thread{
 
     //attributi
     private String ID;
