@@ -1,20 +1,20 @@
 public class Aereo {
 
     //attributi
-    String ID;
-    boolean soloAndata;
-    int codiceVolo;
-    String impresaCostruttrice;
-    boolean deveAtterrare;
+    private String ID;
+    private boolean soloAndata;
+    private int codiceVolo;
+    private String impresaCostruttrice;
+    private boolean deveAtterrare;
 
-    int kgMax;
-    int kgDaCaricare;
-    int kgEffetiviSuAereo;
+    private int kgMax;
+    private int kgDaCaricare;
+    private int kgEffetiviSuAereo;
 
-    int numPersoneDaCaricare;
-    int numPersoneMassime;
-    int numPersoneEffetiveSuAereo;
+    private int numPersoneDaCaricare;
+    private int numPersoneMassime;
+    private int numPersoneEffetiveSuAereo;
 
-    double maxLitriSerbatoioBenzina;
-    double livelloBenzina;
+    private double maxLitriSerbatoioBenzina;
+    private double livelloBenzina;
 }
