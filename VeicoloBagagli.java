@@ -9,14 +9,6 @@ public class VeicoloBagagli {
     }
 
 
-
-
-
-
-
-
-
-
     public void inserisciBagagli(Aereo aereo){
         this.semaforoVeicoloBagagli.p();
 
@@ -28,7 +20,17 @@ public class VeicoloBagagli {
             aereo.setKgEffetiviSuAereo(aereo.getKgDaCaricare());
         }
         
+        this.semaforoVeicoloBagagli.v();
+    }
+
+
+    public void estraiBagagli(Aereo aereo) {
+        this.semaforoVeicoloBagagli.p();
+
+        System.out.println("\nToglimento bagagli da: "+aereo.getID());
+        aereo.setKgEffetiviSuAereo(0);
        
         this.semaforoVeicoloBagagli.v();
     }
+
 }
