@@ -10,6 +10,12 @@ public class GestorePiste {
 
     public void usaPista(Aereo aereo){
 
+        if (aereo.getDeveAtterrae() && this.semaforoPiste.getValore() == 0) {
+           
+            System.out.println("\nsono occupate tutte le piste l'aereo "+aereo.getID()+" rimarra in volo finchè non sene libera una");
+            
+        }
+
         this.semaforoPiste.p();
 
         System.out.println("\nla pista è in uso dal veicolo: "+aereo.getID());
