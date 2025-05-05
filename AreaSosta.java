@@ -10,11 +10,11 @@ public class AreaSosta {
 
     public void entraInSosta(Aereo aereo) {
         this.semaforoSosta.p();
-        System.out.println("\nnell'area di sosta sta entrando il veicolo: "+aereo.getiD());
+        System.out.println("\nnell'area di sosta sta entrando il veicolo: "+aereo.getID());
     }
 
     public void esciDaSosta(Aereo aereo) {
-        System.out.println("\ndall'area di sosta sta uscendo il veicolo: "+aereo.getiD());
+        System.out.println("\ndall'area di sosta sta uscendo il veicolo: "+aereo.getID());
         this.semaforoSosta.v();
     }
 }

@@ -84,8 +84,8 @@ public class Aereo extends Thread{
     public void setKgEffetiviSuAereo(int kgEffetiviSuAereo) {
         this.kgEffetiviSuAereo = kgEffetiviSuAereo;
     }
-    public void setNumPersoneDaCaricare(int numPersoneDaCaricare) {
-        this.numPersoneDaCaricare = numPersoneDaCaricare;
+    public void setNumPersoneEffetiveSuAereo(int numPersoneEffetiveSuAereo) {
+        this.numPersoneEffetiveSuAereo = numPersoneEffetiveSuAereo;
     }
     public void setLivelloBenzina(double livelloBenzina) {
         this.livelloBenzina = livelloBenzina;

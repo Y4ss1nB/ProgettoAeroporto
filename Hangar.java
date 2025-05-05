@@ -10,11 +10,11 @@ public class Hangar {
 
     public void entraInHangar(Aereo aereo) {
         this.semaforoHangar.p();
-        System.out.println("\nsta entrando nel hangar l'aereo: "+ aereo.getiD());
+        System.out.println("\nsta entrando nel hangar l'aereo: "+ aereo.getID());
     }
 
     public void esciDaHangar(Aereo aereo) {
-        System.out.println("\nsta uscendo dall hangar l'aereo: "+ aereo.getiD());
+        System.out.println("\nsta uscendo dall hangar l'aereo: "+ aereo.getID());
         this.semaforoHangar.v();
     }
 }

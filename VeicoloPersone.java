@@ -13,10 +13,10 @@ public class VeicoloPersone {
         semaforoVeicoloPersone.p();
 
        if (aereo.getNumPersoneDaCaricare() > aereo.getNumPersoneMassime()) {
-            System.out.println("\n non ci sono posti per tutti alcune persone non saliranno; sono salite "+aereo.getNumPersoneMassime()+" sul veicolo "+aereo.getiD());
+            System.out.println("\n non ci sono posti per tutti alcune persone non saliranno; sono salite "+aereo.getNumPersoneMassime()+" sul veicolo "+aereo.getID());
             aereo.setNumPersoneEffetiveSuAereo(aereo.getNumPersoneMassime());
        }else{
-            System.out.println("\nsono salitti tutti i passegeri, ovvero, "+aereo.getNumPersoneDaCaricare()+" sul veicolo "+aereo.getiD());
+            System.out.println("\nsono salitti tutti i passegeri, ovvero, "+aereo.getNumPersoneDaCaricare()+" sul veicolo "+aereo.getID());
        }
 
         semaforoVeicoloPersone.v();
@@ -25,7 +25,7 @@ public class VeicoloPersone {
     public void scaricaPasseggeri(Aereo aereo) {
         semaforoVeicoloPersone.p();
         
-        System.out.println("\nsono scesi tutti i passegeri dal veicolo: "+aereo.getiD());
+        System.out.println("\nsono scesi tutti i passegeri dal veicolo: "+aereo.getID());
 
         semaforoVeicoloPersone.v();
     }
