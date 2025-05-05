@@ -22,5 +22,11 @@ public class VeicoloPersone {
         semaforoVeicoloPersone.v();
     }
 
-   
+    public void scaricaPasseggeri(Aereo aereo) {
+        semaforoVeicoloPersone.p();
+        
+        System.out.println("\nsono scesi tutti i passegeri dal veicolo: "+aereo.getiD());
+
+        semaforoVeicoloPersone.v();
+    }
 }
