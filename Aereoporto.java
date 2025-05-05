@@ -13,12 +13,14 @@ public class Aereoporto {
 
     //costruttore
     public Aereoporto(){
-        gestorePiste = new GestorePiste();
-        areaSosta = new AreaSosta();
-        hangar = new Hangar();
-        veicoloRifornimento = new VeicoloRifornimento();
-        veicoloBagagli = new VeicoloBagagli();
-        veicoloPersone = new VeicoloPersone();
-        insiemeAerei = new ArrayList<Aereo>();
+        this.gestorePiste = new GestorePiste();
+        this.areaSosta = new AreaSosta();
+        this.hangar = new Hangar();
+        this.veicoloRifornimento = new VeicoloRifornimento();
+        this.veicoloBagagli = new VeicoloBagagli();
+        this.veicoloPersone = new VeicoloPersone();
+        this.insiemeAerei = new ArrayList<Aereo>();
     }
+
+
 }
