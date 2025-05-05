@@ -110,5 +110,16 @@ public class Aereo extends Thread{
         this.deveAtterrare = deveAtterrare;
     }
 
+    @Override
+    public void run() {
+        hangar.esciDaHangar(this);
+        aereaSosta.entraInSosta(this);
+        veicoloRifornimento.rifornisci(this);
+        veicoloPersone.caricaPasseggeri(this);
+        veicoloBagagli.inserisciBagagli(this);
+        aereaSosta.esciDaSosta(this);
+        gestorePiste.usaPista(this);
+    }
+
 
 }
