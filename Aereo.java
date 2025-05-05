@@ -18,6 +18,14 @@ public class Aereo extends Thread{
     private double maxLitriSerbatoioBenzina;
     private double livelloBenzina;
 
+    //variabili comuni per tutti gli aerei
+    private GestorePiste gestorePiste;
+    private AreaSosta aereaSosta;
+    private Hangar hangar;
+    private VeicoloRifornimento veicoloRifornimento;
+    private VeicoloBagagli veicoloBagagli;
+    private VeicoloPersone veicoloPersone;
+
 
     //costruttore
     public Aereo(String ID, boolean isSoloAndata, int codiceVolo, String impresaCostruttrice, int kgMax, int kgDaCaricare, int numPersoneDaCaricare, int numPersoneMassime, double maxLitriSerbatoioBenzina){
