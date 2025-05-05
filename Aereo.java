@@ -119,6 +119,29 @@ public class Aereo extends Thread{
         veicoloBagagli.inserisciBagagli(this);
         aereaSosta.esciDaSosta(this);
         gestorePiste.usaPista(this);
+
+        if (!this.getIsSoloAndata()) {
+            this.setDeveAtterrare(true);
+            gestorePiste.usaPista(this);
+            this.setDeveAtterrare(false);
+            aereaSosta.entraInSosta(this);
+            veicoloBagagli.estraiBagagli(this);
+            veicoloPersone.scaricaPasseggeri(this);
+            veicoloRifornimento.rifornisci(this);
+            veicoloPersone.caricaPasseggeri(this);
+            veicoloBagagli.inserisciBagagli(this);
+            aereaSosta.esciDaSosta(this);
+            gestorePiste.usaPista(this);
+        }else{
+            this.setDeveAtterrare(true);
+            gestorePiste.usaPista(this);
+            this.setDeveAtterrare(false);
+            aereaSosta.entraInSosta(this);
+            veicoloBagagli.estraiBagagli(this);
+            veicoloPersone.scaricaPasseggeri(this);
+            aereaSosta.esciDaSosta(this);
+            hangar.entraInHangar(this);
+        }
     }
 
 
