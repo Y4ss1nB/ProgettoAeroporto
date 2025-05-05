@@ -28,7 +28,7 @@ public class Aereo extends Thread{
 
 
     //costruttore
-    public Aereo(String ID, boolean isSoloAndata, int codiceVolo, String impresaCostruttrice, int kgMax, int kgDaCaricare, int numPersoneDaCaricare, int numPersoneMassime, double maxLitriSerbatoioBenzina){
+    public Aereo(String ID, boolean isSoloAndata, int codiceVolo, String impresaCostruttrice, int kgMax, int kgDaCaricare, int numPersoneDaCaricare, int numPersoneMassime, double maxLitriSerbatoioBenzina, GestorePiste gestorePiste, AreaSosta aereaSosta, Hangar hangar, VeicoloRifornimento veicoloRifornimento, VeicoloBagagli veicoloBagagli, VeicoloPersone veicoloPersone){
         this.ID = ID;
         this.isSoloAndata = isSoloAndata;
         this.codiceVolo = codiceVolo;
@@ -45,6 +45,14 @@ public class Aereo extends Thread{
 
         this.maxLitriSerbatoioBenzina = maxLitriSerbatoioBenzina;
         this.livelloBenzina = 0;
+
+        this.gestorePiste = gestorePiste;
+        this.aereaSosta = aereaSosta;
+        this.hangar = hangar;
+        this.veicoloRifornimento = veicoloRifornimento;
+        this.veicoloBagagli = veicoloBagagli;
+        this.veicoloPersone = veicoloPersone;
+
     }
 
     //getter
