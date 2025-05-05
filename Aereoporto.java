@@ -10,4 +10,15 @@ public class Aereoporto {
     private VeicoloPersone veicoloPersone;
     
     private ArrayList<Aereo> insiemeAerei;
+
+    //costruttore
+    public Aereoporto(){
+        gestorePiste = new GestorePiste();
+        areaSosta = new AreaSosta();
+        hangar = new Hangar();
+        veicoloRifornimento = new VeicoloRifornimento();
+        veicoloBagagli = new VeicoloBagagli();
+        veicoloPersone = new VeicoloPersone();
+        insiemeAerei = new ArrayList<Aereo>();
+    }
 }
