@@ -41,4 +41,10 @@ public class Aereoporto {
         }
     }
 
+    public void avviaAerei(){
+        for (Aereo aereo : insiemeAerei) {
+            aereo.start();
+        }
+    }
+
 }
